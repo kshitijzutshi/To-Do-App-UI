@@ -36,6 +36,10 @@ function loadlist(array) {
 // localStorage.setItem("TODO", JSON.stringify(LIST));
 
 // REFRESH BUTTON TO CLEAR ALL
+clear.addEventListener("click", function () {
+  localStorage.clear();
+  location.reload();
+});
 
 // show today's date
 
